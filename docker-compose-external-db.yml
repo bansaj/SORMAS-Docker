@@ -4,7 +4,7 @@ services:
     restart: unless-stopped
     links:
       - postgres
-    image: hzibraunschweig/sormas-application:${SORMAS_DOCKER_VERSION}
+    image: bansaj/sormas-application:${SORMAS_DOCKER_VERSION}
     environment:
       - SORMAS_POSTGRES_USER=${SORMAS_POSTGRES_USER}
       - SORMAS_POSTGRES_PASSWORD=${SORMAS_POSTGRES_PASSWORD}
